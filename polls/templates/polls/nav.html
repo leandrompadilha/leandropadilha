@@ -1,9 +1,8 @@
 {% load static %}
-{% load staticfiles %}
 
 <nav class="container-fluid bg-light fixed-top" id="inicio">
     <div class="container navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="."><img src="/src/img/favicon.svg" class="favicon pb-1"> leandroPadilha</a>
+        <a class="navbar-brand" href="."><img src="{% static 'img\icons\favicon.svg' %}" class="favicon pb-1"> leandroPadilha</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,10 +25,10 @@
                         <a class="nav-item nav-link" href="#">|</a>
                     </li>
                     <li class="row nav-item align-items-center">
-                        <a class="nav-item nav-link px-3" href="https://github.com/leandrompadilha" target="_blank" class="nav-link text-white"><img src="/src/img/gh.svg" alt=""></a>
+                        <a class="nav-item nav-link px-3" href="https://github.com/leandrompadilha" target="_blank" class="nav-link text-white"><img src="{% static 'img\icons\gh.svg' %}" alt=""></a>
                     </li>
                     <li class="row nav-item align-items-center">
-                        <a class="nav-item nav-link px-3" href="https://www.linkedin.com/in/leandro-padilha-68237096/" target="_blank" class="nav-link text-white"><img src="/src/img/in.svg" alt=""></a>
+                        <a class="nav-item nav-link px-3" href="https://www.linkedin.com/in/leandro-padilha-68237096/" target="_blank" class="nav-link text-white"><img src="{% static 'img\icons\in.svg' %}" alt=""></a>
                         </a>
                     </li>
                 </ul>

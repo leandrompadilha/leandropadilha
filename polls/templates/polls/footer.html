@@ -1,2 +1,49 @@
 {% load static %}
 
+<footer>
+    <section class="container-fluid bg-dark bg-gradient text-light h-100" id="contato">
+        <div class="container mt-5 pt-5 mb-3 pb-5">
+            <h2 class="text-center">Contato</h2>
+            <div class="row form-group text-light">
+                <form
+                    action="https://formsubmit.co/leandromagalhaespadilha@hotmail.com"
+                    method="POST">
+                    <label for="validationCustom01">Nome</label>
+                    <input class="form-control mb-4" type="text" name="nome"
+                        id="validationCustom01" required>
+                    <label for="email">Email</label>
+                    <input class="form-control mb-4" type="email" name="email"
+                        id="email" required>
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" name="message"
+                        placeholder="Escreva aqui..." required id="message"
+                        cols="30" rows="10"></textarea>
+                    <input type="hidden" name="_next"
+                        value="https://leandrompadilha.github.io/obrigado">
+                    <button class="col-12 text-center btn btn-primary mt-4"
+                        type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-light text-body m-0 p-0" id="redes">
+        <div class="container text-center pt-5">
+            <a class="px-1" href="https://github.com/leandrompadilha"
+                target="_blank" class="nav-link text-white"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt=""></a>
+            <a class="px-1"
+                href="https://www.linkedin.com/in/leandro-padilha-68237096/"
+                target="_blank" class="nav-link text-white"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt=""></a>
+
+            <h6 class="pt-3">© Todos os direitos reservados - leandroPadilha</h6>
+        </div>
+    </section>
+
+    <section class="container-fluid comments bg-light pt-4">
+        <div class="container" id="disqus_thread"></div>
+    </section>
+</footer>
